@@ -5,12 +5,14 @@
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     </head>
     <body class="bg-amber-300 min-h-screen flex justify-center items-center">
-        <div class="bg-gradient-to-br from-purple-400 via-white to-blue-300 hover:to-purple-400 hover:via-white hover:from-blue-300 rounded-2xl p-8 max-w-sm w-full text-center">
-            <h1>Guess A Number From 1 to 100</h1>
-            <p>i'm waiting for you</p>
-            <input type="number">
-            <button>Check</button>
-            <p>Chance Count: <div>0</div></p>
+        <div class="shadow-2xl bg-gradient-to-br from-purple-400 via-white to-blue-300 hover:to-purple-400 hover:via-white hover:from-blue-300 rounded-2xl p-8 max-w-sm w-full text-center">
+            <h1 class="font-extrabold">Guess A Number From 1 to 100</h1>
+            <p id="hint" class="my-4">i'm waiting for you</p>
+            <input id="user-input" class="rounded-2xl p-5 border-2 border-blue-300 hover:border-purple-400 my-4 w-full" type="number">
+            <button id="check-button" class="rounded-2xl w-full p-4 bg-blue-400 hover:bg-purple-400 my-4 active:scale-95 transition">Check</button>
+            <p>Chance Count: <div id="chance-count">0</div></p>
         </div>
+        
+    <script src="js/index.js"></script>
     </body>
 </html>
